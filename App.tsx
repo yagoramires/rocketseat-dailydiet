@@ -19,7 +19,7 @@ export default function App() {
       <StatusBar
         backgroundColor='transparent'
         barStyle='dark-content'
-        // translucent
+        translucent
       />
     </ThemeProvider>
   );

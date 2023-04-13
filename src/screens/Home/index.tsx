@@ -10,6 +10,8 @@ import {
   Percent,
   Profile,
 } from './styles';
+
+import { useNavigation } from '@react-navigation/native';
 import { useState } from 'react';
 
 import LogoImg from '@assets/logo.png';
@@ -61,8 +63,14 @@ const Home = () => {
     },
   ];
 
-  const handlePercentClick = () => {
-    console.log('teste');
+  const navigation = useNavigation();
+
+  const handleViewStats = () => {
+    navigation.navigate('stats');
+  };
+
+  const handleAddMeal = () => {
+    navigation.navigate('new');
   };
 
   return (
@@ -71,13 +79,18 @@ const Home = () => {
         <Logo source={LogoImg} />
         <Profile />
       </Header>
-      <MealPercentContainer onPress={handlePercentClick}>
+      <MealPercentContainer onPress={handleViewStats}>
         <Icon />
         <Percent>{percent}</Percent>
         <HeaderText>das refeições dentro da dieta</HeaderText>
       </MealPercentContainer>
       <Label>Refeições</Label>
-      <Button label='Nova refeição' type='PRIMARY' icon='add' />
+      <Button
+        label='Nova refeição'
+        type='PRIMARY'
+        icon='add'
+        onPress={handleAddMeal}
+      />
       <FlatList
         data={mealsData}
         keyExtractor={(item) => String(item.createdAt)}

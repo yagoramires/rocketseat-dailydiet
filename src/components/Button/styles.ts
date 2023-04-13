@@ -1,8 +1,6 @@
 import { Text, TouchableOpacity } from 'react-native';
 import styled, { css } from 'styled-components/native';
 
-import { Plus, PencilSimpleLine, Trash } from 'phosphor-react-native';
-
 export type ButtonTypeStyleProps = 'PRIMARY' | 'SECONDARY';
 
 type Props = {
