@@ -7,10 +7,8 @@ type StatusViewProps = {
 
 export const Container = styled.TouchableOpacity`
   flex: 1%;
-  min-height: 49px;
-  max-height: 49px;
 
-  padding: 16.5px 12px;
+  padding: 16px 14px;
 
   flex-direction: row;
   justify-content: space-between;
@@ -37,7 +35,7 @@ export const TextTime = styled.Text`
     font-size: ${theme.FONT_SIZE.BODY_XS}px;
   `}
 
-  line-height: 15px;
+  line-height: 16px;
 `;
 
 export const Divider = styled.View`
@@ -52,7 +50,7 @@ export const TextMealTitle = styled.Text`
     font-family: ${theme.FONT_FAMILY.REGULAR};
     font-size: ${theme.FONT_SIZE.BODY_M}px;
   `}
-  line-height: 19px;
+  line-height: 21px;
 `;
 
 export const MealStatus = styled(View)<StatusViewProps>`
