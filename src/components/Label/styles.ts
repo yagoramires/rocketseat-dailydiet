@@ -7,5 +7,5 @@ export const Container = styled.Text`
     font-family: ${theme.FONT_FAMILY.BOLD};
   `}
 
-  margin-bottom: 4px;
+  margin-bottom: 8px;
 `;

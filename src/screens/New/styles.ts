@@ -24,7 +24,6 @@ export const OptionsContainer = styled.View`
   width: 100%;
   flex-direction: row;
   gap: 32px;
-  margin-bottom: 24px;
 `;
 
 export const Option = styled.View`
